@@ -1,0 +1,84 @@
+.sidenav {
+    height: 100vh;
+    width: 250px;
+    background-color: #318b40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .sidenav.collapsed {
+    width: 95px;    
+  }
+  
+  .sidenav-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .logo-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img{
+    width: 70px;
+    top: 35px;
+    left: 60%;
+    transition: transform 0.3s ease;
+  }
+  
+  .company-name {
+    width: 18px;
+    margin-left: 10px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Collapse Styles for Header */
+  .sidenav.collapsed .logo {
+    transform: scale(0.8); /* Shrinks the logo slightly */
+  }
+  
+  .sidenav.collapsed .company-name {
+    opacity: 0; /* Hides the company name */
+  }
+  
+  .collapse-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .sidenav-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+/* Side Layout Syling */
+.side-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling if unnecessary */
+  }
+
+/* Content area below Topnav */
+.main-content {
+    flex: 1; 
+    padding: 20px;
+    overflow-y: auto; 
+  }
